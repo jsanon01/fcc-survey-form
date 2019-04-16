@@ -8,19 +8,19 @@
 		<div id="main">
 			<h1 id="title">Survey Form</h1>
 			<div id="form-outer">
-				<p>Let us know how we can improve</p>
+				<p id="description">For more information:</p>
 			<form id="survey-form" method="GET" action="https://crossorigin.me/https://freecodecamp.com">
     <div class="rowTab">
       <div class="labels">
-        <label id="name-label" for="name">* Name: </label>
+        <label id="name-label" for="name">*Name: </label>
       </div>
       <div class="rightTab">
-        <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+        <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name (required)" required>
       </div>
     </div>
     <div class="rowTab">
       <div class="labels">
-        <label id="email-label" for="email">* Email: </label>
+        <label id="email-label" for="email">*Email: </label>
       </div>
       <div class="rightTab">
         <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your Email">
@@ -28,30 +28,35 @@
     </div>
     <div class="rowTab">
       <div class="labels">
-        <label id="number-label" for="age">* Age: </label>
+        <label id="number-label" for="age">*Age: </label>
       </div>
       <div class="rightTab">
-        <input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="Age">
+        <input type="number" name="age" id="number" min="10" max="105" class="input-field" placeholder="Age">
       </div>
     </div>
     <div class="rowTab">
       <div class="labels">
-        <label for="currentPos">Which option best describes your current role?</label>
+        <!-- <label for="currentPos">Which option best describes your current role?</label> -->
+        <label for="currentPos">What is your status?</label>
       </div>
       <div class="rightTab">
         <select id="dropdown" name="currentPos" class="dropdown">
       <option disabled value>Select an option</option>
-      <option  value="student">Student</option>
-      <option value="job">Full Time Job</option>
-      <option value="learner">Full Time Learner</option>
-      <option value="preferNo">Prefer not to say</option>
+      <option  value="male">Male</option>
+      <!-- <option  value="student">Student</option> -->
+      <option value="female">Female</option>
+      <!-- <option value="job">Full Time Job</option> -->
+      <!-- <option value="learner">Full Time Learner</option> -->
+      <option value="trans">Transgender</option>
       <option value="other">Other</option>
     </select>
       </div>
     </div>
     <div class="rowTab">
       <div class="labels">
-        <label for="userRating">* How likely is that you would recommend freeCodeCamp to a friend?</label>
+        <label for="userRating">* Will you probably refer this website to a peer?</label>
+        <!-- <label for="userRating">* How likely is that you would recommend freeCodeCamp to a friend?</label> -->
+
       </div>
       <div class="rightTab">
         <ul style="list-style: none;">
@@ -63,7 +68,7 @@
     </div>
     <div class="rowTab">
       <div class="labels">
-        <label for="most-like">What do you like most in FCC: </label>
+        <label for="most-like">What is your preference in FCC: </label>
       </div>
       <div class="rightTab">
         <select id="most-like" name="mostLike" class="dropdown">
@@ -77,7 +82,7 @@
     </div>
     <div class="rowTab">
       <div class="labels">
-        <label for="preferences">Things that should be improved in the future<br>(Check all that apply): </label>
+        <label for="preferences">Where to enhance in the future<br>(Check all that apply): </label>
       </div>
       <div class="rightTab">
         <ul id="preferences" style="list-style: none;">
